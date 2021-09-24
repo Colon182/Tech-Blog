@@ -44,7 +44,6 @@ router.delete('/:id', withAuth, async (req, res) => {
       // TODO: SET ID TO ID PARAMETER INSIDE WHERE CLAUSE CONDITION FIELD
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
       }
 
     });
